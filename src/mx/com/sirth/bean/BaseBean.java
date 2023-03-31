@@ -8,6 +8,7 @@ import javax.faces.view.ViewScoped;
 public class BaseBean {
 
 	private String nombre = "armando";
+	private String raul	= "raul";
 	
 	
 	
@@ -20,6 +21,14 @@ public class BaseBean {
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
+	}
+
+	public String getRaul() {
+		return raul;
+	}
+
+	public void setRaul(String raul) {
+		this.raul = raul;
 	}	
 	
 }
