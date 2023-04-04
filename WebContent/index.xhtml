@@ -10,8 +10,34 @@
 
   <h:body>
 	<p:card>
-		<p:commandButton value="Buscar"/>
-		<p:dataTable> </p:dataTable>
+		<h:form>
+			<p:commandButton value="Buscar" action="#{pruebaBean.consulta}" ajax="true" update="tablausuarios dialogoErrores"/>
+			<p:panel visible="#{pruebaBean.verUsuarios}" id="tablausuarios">
+			<p:dataTable lazy="false" value="#{pruebaBean.lista}" var="usu" > 
+				 <p:column headerText="Id Usuario">
+	                <h:outputText value="#{usu.idUsuario}" />
+	            </p:column>
+	             <p:column headerText="Nombre">
+	                <h:outputText value="#{usu.nombre}" />
+	            </p:column>
+	             <p:column headerText="ape pat">
+	                <h:outputText value="#{usu.apePat}" />
+	            </p:column>
+	             <p:column headerText="ape mat">
+	                <h:outputText value="#{usu.apeMat}" />
+	            </p:column>
+	             <p:column headerText="Telefono">
+	                <h:outputText value="#{usu.telefono}" />
+	            </p:column>
+			</p:dataTable>
+			</p:panel>
+		</h:form>
+
 	</p:card>
+	
+	<p:dialog header="Ocurrio un error" id="dialogoErrores" visible="#{pruebaBean.verErrores}" modal="true">
+		<p:outputLabel value="#{pruebaBean.error}"/>
+		
+	</p:dialog>
   </h:body>
 </html>
