@@ -12,6 +12,7 @@
 	<p:card>
 		<h:form>
 			<p:commandButton value="Buscar" action="#{pruebaBean.consulta}" ajax="true" update="tablausuarios dialogoErrores"/>
+			<p:commandButton value="Buscar" action="#{pruebaBean.consulta}" ajax="true" update="tablausuarios dialogoErrores"/>
 			<p:panel visible="#{pruebaBean.verUsuarios}" id="tablausuarios">
 			<p:dataTable lazy="false" value="#{pruebaBean.lista}" var="usu" > 
 				 <p:column headerText="Id Usuario">
