@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+<h:head>
+	<title>Incio</title>
+	<link href="/sirthWeb/css/css.css" rel="stylesheet" type="text/css" />
+	<link
+		href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+		rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+		crossorigin="anonymous" />
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+	<style>
+.form {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+body {
+	background: #67B26F; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);
+	/* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4ca2cd, #67B26F);
+	/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* Estilos para el carrusel */
+.carousel {
+	max-width: 1000px; /* Ajusta el ancho máximo deseado */
+	margin: 5 auto;
+}
+
+.carousel-inner {
+	width: 100%;
+}
+
+.carousel-image {
+  width: 1000px;
+  height: 300px;
+  object-fit: cover;
+}
+}
+</style>
+</h:head>
+
+
+<h:body>
+
+		<ui:include src="/templates/layouts/navbar.xhtml" />
+		<br/>
+
+   
+
+
+	<div class="from" style="display: flex; justify-content: center;">
+	<div id="carouselExampleIndicators" class="carousel slide">
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<img src="../../imagenes/s1.jpeg" class="d-block carousel-image" />
+			</div>
+			<div class="carousel-item">
+				<img src="../../imagenes/s3.jpeg" class="d-block carousel-image" />
+			</div>
+			<div class="carousel-item">
+				<img src="../../imagenes/s2.jpeg" class="d-block carousel-image"/>
+			</div>
+		</div>
+		<button class="carousel-control-prev" type="button"
+			data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Anterior</span>
+		</button>
+		<button class="carousel-control-next" type="button"
+			data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+		</button>
+	</div>
+</div>
+
+
+
+		<ui:include src="/templates/layouts/footer.xhtml" />
+		<br />
+
+</h:body>
+</html>
