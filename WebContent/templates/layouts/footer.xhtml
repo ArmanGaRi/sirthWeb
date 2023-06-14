@@ -12,29 +12,39 @@
 
 </h:head>
 <h:body>
-	
+	<br/>
 	
 	<div class="container">
-	<footer class="py-5">
-    <div class="row">
-      <div class="col-6 col-md-4 mb-3">
-        <h5 style="color: white" align="center"><b>Informacion general</b></h5>
-        <p style="color: white"><b> Misión</b></p>
-				<p style="color: white">Somos una institución educativa de nivel superior, que forma
-					profesionistas con sentido humanístico y pensamiento crítico
-					inducido a la innovación, para potencializar el desarrollo
-					sostenible de la región y del país.</p>
-				<p style="color: white"><b>Vision</b></p>
-				<p style="color: white">Ser una de las mejores instituciones de educación superior de
-					la región, con una oferta educativa reconocida por su calidad, que
-					responda a las necesidades de los diferentes sectores productivos.</p>
+	<footer>
+    <div class="row text-center">
+      <div class="col-6 col-md-2 mb-1">
+        <h6 style="color: white" align="center"><b>Informacion general</b></h6>
+   			<p:commandButton value="Mision" styleClass="ui-button-raised ui-button-secondary" onclick="PF('missionDialog').show()" />
+
+<p:dialog header="Misión del TESH" widgetVar="missionDialog" modal="true" resizable="false">
+    <p>
+       Somos una institución educativa de nivel superior, que forma profesionistas con sentido humanístico y pensamiento crítico inducido a la innovación, para potencializar el desarrollo sostenible de la región y del país.
+    </p>
+</p:dialog>
+   			
+   			
+   			<br/>
+   			<br/>
+   			
+   			<p:commandButton value="Vision" styleClass="ui-button-raised ui-button-secondary" onclick="PF('visionDialog').show()" />
+
+<p:dialog header="Visión del TESH" widgetVar="visionDialog" modal="true" resizable="false">
+    <p>
+        Ser una de las mejores instituciones de educación superior de la región, con una oferta educativa reconocida por su calidad, que responda a las necesidades de los diferentes sectores productivos.
+    </p>
+</p:dialog>
       </div>
 
-      <div class="col-6 col-md-5 mb-3">
-        <h5 align="center" style="color: white"><b>Acerca del sitio</b></h5>
-        <br/>
+      <div class="col-3 col-md-4 mb-1">
+        <h6 align="center" style="color: white"><b>Acerca del sitio</b></h6>
         
-		<p style="color: white">
+        
+		<p style="color: white; font-size: small; align-content: justify;">
 			Este sitio fue desarrollado 100% por alumnos del Tecnologico de
 			Estudios Superiores de Huixquilucan,<br /> pertenecientes a las
 			generaciones 2019 y 2020 con fines de apoyo al area administrativa
@@ -42,30 +52,31 @@
 		</p>
       </div>
 
-      <div class="col-md-3 offset-md-0 mb-3" style="background-color: #5C9786;">
-        <h5 style="color: white" align="center"><b>Información de Contacto</b></h5>
-        <br/>
-				<p align="justify" style="color: white">
+      <div class="col-md-3 offset-md-1 mb-2" >
+        <h6 style="color: white" align="center"><b>Información de Contacto</b></h6>
+  
+				<p align="justify" style="color: white; font-size: small;">
 					Dirección: Barrio, El Río s/n, 52773 Magdalena Chichicaspa, Méx.
 					Cierra a las 18:00 <br /> Teléfono: 55 8288 1130
 				</p>
-				<p align="center" style="color: white">Síguenos en redes
-					sociales</p>
-
-				<p align="center">
-					<p:linkButton href="https://www.facebook.com/tu-usuario-facebook"
-						icon="pi pi-facebook" styleClass="rounded-button ui-button-info" />
-					<p:linkButton href="https://twitter.com/tu-usuario-twitter"
-						icon="pi pi-twitter" styleClass="rounded-button" />
-					<p:linkButton href="https://www.instagram.com/tu-usuario-instagram"
-						icon="pi pi-instagram"
-						styleClass="rounded-button ui-button-danger" />
-					<br /> <br />
-					<p:linkButton 
-						href="https://teshuixquilucan.edomex.gob.mx" icon="pi pi-home"
-						styleClass="ui-button-success" />
-				</p>
+				
       </div>
+      
+      <div class="col-md-1 offset-md-1 mb-0" style="background-color: #5C9786;">
+    <p style="font-size: small; margin-bottom: 0;">
+        <p:linkButton href="https://www.facebook.com/tu-usuario-facebook"
+            icon="pi pi-facebook" styleClass="rounded-button ui-button-info" style="font-size: small; margin-bottom: 5px;" />
+        <p:linkButton href="https://twitter.com/tu-usuario-twitter"
+            icon="pi pi-twitter" styleClass="rounded-button" style="font-size: small; margin-bottom: 5px;" />
+        <p:linkButton href="https://www.instagram.com/tu-usuario-instagram"
+            icon="pi pi-instagram" styleClass="rounded-button ui-button-danger" style="font-size: small; margin-bottom: 5px;" />
+        <br /> <br />
+        <p:linkButton href="https://teshuixquilucan.edomex.gob.mx"
+            icon="pi pi-home" styleClass="ui-button-success" style="font-size: small;" />
+    </p>
+</div>
+      
+      
     </div>
 
   </footer>
